@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>🐶 Maze Solver Ultimate</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🐶 Maze Solver Ultimate</h1>
+
+<div id="controls">
+    <button onclick="startAlgorithm('bfs')">BFS</button>
+    <button onclick="startAlgorithm('dfs')">DFS</button>
+    <button onclick="startAlgorithm('astar')">A*</button>
+    <button onclick="generateMaze()">Maze</button>
+    <button onclick="reset()">Reset</button>
+    <button onclick="toggleMusic()">🎵 Music</button>
+</div>
+
+<p id="info">Build a maze and solve it</p>
+<p id="stats"></p>
+
+<h3>🏆 Leaderboard</h3>
+<ul id="leaderboard"></ul>
+
+<div id="grid"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

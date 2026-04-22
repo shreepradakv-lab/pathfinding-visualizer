@@ -1,0 +1,57 @@
+body {
+    background:#0f0f0f;
+    color:white;
+    text-align:center;
+    font-family:Arial;
+}
+
+#grid {
+    display:grid;
+    grid-template-columns:repeat(20,28px);
+    justify-content:center;
+    margin-top:20px;
+}
+
+.cell {
+    width:28px;
+    height:28px;
+    border:1px solid #222;
+    transition: all 0.2s ease;
+}
+
+.start { background:green; }
+.end { background:red; }
+.wall { background:#333; }
+
+.visited {
+    background:#00bcd4;
+    animation:pop 0.2s;
+}
+
+.path {
+    background:yellow;
+    animation:glow 0.3s infinite alternate;
+}
+
+.puppy {
+    background:url('https://cdn-icons-png.flaticon.com/512/616/616408.png') center/cover;
+}
+
+@keyframes pop {
+    from{transform:scale(0.3);}
+    to{transform:scale(1);}
+}
+
+@keyframes glow {
+    from{box-shadow:0 0 5px yellow;}
+    to{box-shadow:0 0 15px yellow;}
+}
+
+button {
+    margin:5px;
+    padding:8px;
+    background:#222;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
