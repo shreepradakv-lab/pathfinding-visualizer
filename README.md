@@ -1,5 +1,7 @@
 # 🐶 Maze Solver – Pathfinding Visualizer
 
+[Live Demo](https://shreepradakv-lab.github.io/pathfinding-visualizer/)
+
 An interactive maze-solving game that visualizes pathfinding algorithms with animations, sound effects, and a leaderboard.
 
 ## 🚀 Features
